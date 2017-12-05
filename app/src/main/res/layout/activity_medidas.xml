@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.notebookdell.conversaoapp.MedidasActivity"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/rgDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor para ser convertido..."
+            android:inputType="numberDecimal"/>
+
+        <RadioButton
+            android:id="@+id/deMilhas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milhas" />
+
+        <RadioButton
+            android:id="@+id/deQuilometros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quilometros" />
+
+        <RadioButton
+            android:id="@+id/dePes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pés" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para:"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgPara">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milhas"
+            android:id="@+id/paraMilhas"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quilometros"
+            android:id="@+id/paraQuilometros"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pés"
+            android:id="@+id/paraPes"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERSAO"/>
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
