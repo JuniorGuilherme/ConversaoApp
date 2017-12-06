@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.notebookdell.conversaoapp.TangenteActivity">
+    tools:context="com.example.notebookdell.conversaoapp.TangenteActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/etAngulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Insira o Angulo"
+        android:inputType="numberSigned"
+        android:textSize="24sp"
+        android:layout_marginBottom="50sp"/>
+
+    <Button
+        android:id="@+id/btnCalcularTangente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:textSize="18sp"
+        android:layout_marginBottom="50sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tangente:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtTangente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -25,6 +25,22 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intencao);
             }
         });
+
+        btnMoeda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencao = new Intent(MainActivity.this, MoedasActivity.class);
+                MainActivity.this.startActivity(intencao);
+            }
+        });
+
+        btnTangente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intencao = new Intent(MainActivity.this, TangenteActivity.class);
+                MainActivity.this.startActivity(intencao);
+            }
+        });
     }
 
 }

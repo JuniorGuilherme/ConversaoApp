@@ -18,7 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite o valor para ser convertido..."
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="30sp"/>
 
         <RadioButton
             android:id="@+id/deMilhas"
@@ -36,7 +37,8 @@
             android:id="@+id/dePes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pés" />
+            android:text="Pés"
+            android:layout_marginBottom="30sp"/>
     </RadioGroup>
 
     <TextView
@@ -62,7 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pés"
-            android:id="@+id/paraPes"/>
+            android:id="@+id/paraPes"
+            android:layout_marginBottom="30sp"/>
     </RadioGroup>
     <Button
         android:id="@+id/btnCalcular"
